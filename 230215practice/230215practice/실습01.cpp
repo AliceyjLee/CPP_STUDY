@@ -30,12 +30,12 @@ int main() {
 			cout << "사용자가 부른 숫자 ! " << endl;
 			for (i = num + 1; i <= p + num; i++) {
 				cout << i << endl;
-				if (i == 31) {
+				if (i == 32) {
 					break;
 				}
 			}
 			num += p;
-			if (i == 31) { 
+			if (i == 32) { 
 				cout << "사용자가 졌습니다. " << endl;
 				break; 
 			}
@@ -46,12 +46,12 @@ int main() {
 			cout << "컴퓨터가 부른 숫자 ! " << c << endl;
 			for (j = num + 1; j <= num + c; j++) {
 				cout << j << endl;
-				if (j == 31) {
+				if (j == 32) {
 					break;
 				}
 			}
 			num += c;
-			if (j== 31) { 
+			if (j== 32) { 
 				cout << "컴퓨터가 졌습니다. " << endl;
 				break; 
 			}
