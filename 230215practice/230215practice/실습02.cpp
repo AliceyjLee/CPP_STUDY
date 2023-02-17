@@ -13,14 +13,14 @@ using std::endl;
 // 제한 시간이 종료되면 게임을 종료 시키고, 입력한 단어의 갯수를 출력
 
 // 제한시간 30초 
-// 첫 단어의 마지막 알파벳과 다음 단어의 첫번째 알파벳이 일치 ->  vector ?
+// 첫 단어의 마지막 알파벳과 다음 단어의 첫번째 알파벳이 일치 
 // 입력한 단어의 갯수 -> 함수 count
 
 int main() {
 
 	string word = "orange";
 	string next;
-	int count =0;   // word랑 next 단어를 담아야 되는데??
+	int count =0;  
 
 	clock_t startTime = clock();
 	clock_t endTime;
@@ -40,9 +40,7 @@ int main() {
 			cout << "잘못된 입력입니다.  " << endl;
 		}
 	}
-
-
-	cout << "-----------Time Over---------------";
+	cout << "-----------Time Over---------------" << endl;
 	cout << "총 입력한 단어 개수는 :" << count << "개 입니다.  " << endl;
 
 	cout << "걸린시간은 " << (endTime - startTime) / CLOCKS_PER_SEC << endl;

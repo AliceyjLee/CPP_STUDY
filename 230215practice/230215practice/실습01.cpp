@@ -19,7 +19,7 @@ int main() {
 	int num = 0;
 	int i = 0;
 	int j = 0;
-	bool p_lose = true, c_lose = true;
+	//bool p_lose = true, c_lose = true;
 
 	std::srand(time(NULL));
 
