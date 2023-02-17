@@ -67,12 +67,13 @@ int main() {
 	// user_num;
 	// lotto;
 	count = 0;
-	for ( int i = 0; i < user_num[i]; i++ ) {
-		for (int j = 0; j < lotto[j]; j++) {
-			count++;
+	for ( int i = 0; i < 6; i++ ) {
+		for (int j = 0; j < 6; j++) {
+			if (user_num[i] == lotto[j]) {
+				count++;
+			}
 		}
 	}
-
 	if ( count == 6) {             //  다맞으면 1등, 5개 2등, 4개 3등, 3개 4등, 2개 5등, 1개 6등, 0개 7등
 		cout << "1등입니다 ! " << endl;
 	}
@@ -93,13 +94,6 @@ int main() {
 	}
 	else {
 		cout << "7등입니다 ! " << endl;
-	}
-
-	
-		
-		
-		
-		
-		
+	}	
 		return 0;
 }
