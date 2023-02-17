@@ -1,5 +1,6 @@
 #include<iostream>
 #include<cstring>
+#include<string>
 
 using std::string;
 using std::cout;
@@ -52,11 +53,33 @@ int main() {
 
 	//cin.getline을 이용하여 빈칸을 포함하는 문자열을 읽는 예
 
-	cout << "주소를 입력하세요.\n";
-	char address[100];
-	cin.getline( address, 100, '\n' );
-	cout << "주소는 " << address << " 입니다 !\n";
+	//cout << "주소를 입력하세요.\n";
+	//char address[100];
+	//cin.getline( address, 100, '\n' );
+	//cout << "주소는 " << address << " 입니다 !\n";
 
-
+	// 가위 바위 보 게임
+	
+	cout << "가위 바위 보 게임을 합니다. 가위 바위 보 중에서 입력하세요." << endl;
+	string game1, game2;
+	cin >> game1;
+	cout << "사또 : " << game1 << endl;
+	cin >> game2;
+	cout << "아랑 : " << game2 << endl;
+	if (game1 == game2)  {
+		cout << "비겼습니다." << endl;
+	}
+	else if (game1 == "가위" && game2 == "바위") {
+		cout << "아랑이 이겼습니다." << endl;
+	}
+	else if (game1 == "가위" && game2 == "보") {
+		cout << "사또이 이겼습니다." << endl;
+	}
+	else if (game1 == "바위" && game2 == "보") {
+		cout << "아랑이 이겼습니다." << endl;
+	}
+	else if (game1 == "보" && game2 == "가위") {
+		cout << "아랑이 이겼습니다." << endl;
+	}
 	return 0;
 }
