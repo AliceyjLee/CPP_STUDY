@@ -80,27 +80,6 @@ int main() {
 			}
 		}
 	}
-	if (count == 6) {             //  다맞으면 1등, 5개 2등, 4개 3등, 3개 4등, 2개 5등, 1개 6등, 0개 7등
-		cout << "1등입니다 ! " << endl;
-	}
-	else if (count == 5) {
-		cout << "2등입니다 ! " << endl;
-	}
-	else if (count == 4) {
-		cout << "3등입니다 ! " << endl;
-	}
-	else if (count == 3) {
-		cout << "4등입니다 ! " << endl;
-	}
-	else if (count == 2) {
-		cout << "5등입니다 ! " << endl;
-	}
-	else if (count == 1) {
-		cout << "6등입니다 ! " << endl;
-	}
-	else {
-		cout << "7등입니다 ! " << endl;
-	}
 
 	// if 사용하지 않고 count 변수로 등수 확인 하기 
 	cout << 7 - count << "등 입니다 ! 축하합니다 !." << endl;
