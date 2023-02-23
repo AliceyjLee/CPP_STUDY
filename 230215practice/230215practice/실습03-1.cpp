@@ -17,7 +17,7 @@ using std::endl;
 int main() {
 
 	// cout << "중복된 숫자가 있습니다. 다시 입력해주세요. " << endl;
-	
+
 	std::srand(time(NULL));
 	int user[6] = {};
 	int count = 0;
@@ -44,7 +44,7 @@ int main() {
 			cout << "범위를 초과한 숫자를 입력하셨습니다. " << endl;
 		}
 	}
-	
+
 	int lotto[6] = {};       // 6개의 숫자를 0으로 초기화 - 일반 배열
 	count = 0;
 	while (count < 6) {
@@ -70,17 +70,16 @@ int main() {
 	cout << "------------ 당 첨 결 과--------------" << endl;
 
 	// 사용자 배열과 컴퓨터 배열을 비교해서 같은 값이 몇 개 인지 출력하는 변수가 필요
-	// user;
+	// user_num;
 	// lotto;
 	count = 0;
-	for ( int i = 0; i < 6; i++ ) {
+	for (int i = 0; i < 6; i++) {
 		for (int j = 0; j < 6; j++) {
 			if (user[i] == lotto[j]) {
 				count++;
 			}
 		}
 	}
-
 	if (count == 6) {             //  다맞으면 1등, 5개 2등, 4개 3등, 3개 4등, 2개 5등, 1개 6등, 0개 7등
 		cout << "1등입니다 ! " << endl;
 	}
@@ -102,6 +101,8 @@ int main() {
 	else {
 		cout << "7등입니다 ! " << endl;
 	}
-	
-		return 0;
+
+	// if 사용하지 않고 count 변수로 등수 확인 하기 
+	cout << 7 - count << "등 입니다 ! 축하합니다 !." << endl;
+	return 0;
 }
